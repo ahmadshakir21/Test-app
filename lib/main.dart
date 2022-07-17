@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: const Center(
-        child: Text("Flutter"),
+        child: Text("Flutter App"),
       ),
     );
   }

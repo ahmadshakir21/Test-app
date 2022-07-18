@@ -32,12 +32,22 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: const Center(
-        child: Text("Flutter App"),
-      ),
-    );
+        appBar: AppBar(
+          title: Text(widget.title),
+        ),
+        body: ListView.builder(
+            itemBuilder: (context, index) => Padding(
+                  padding: const EdgeInsets.all(5),
+                  child: Card(
+                    color: Colors.pink.shade200,
+                    child: const ListTile(
+                      title: Center(
+                          child: Text("Title",
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold))),
+                      subtitle: Center(child: Text("SubTitle")),
+                    ),
+                  ),
+                )));
   }
 }

@@ -74,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
             }),
       ),
       floatingActionButton: FloatingActionButton(
-        child: Center(
+        child: const Center(
             child: Icon(
           Icons.add,
           size: 50,
